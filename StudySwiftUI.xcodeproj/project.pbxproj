@@ -13,6 +13,8 @@
 		CA260AB824AAB935001AEF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA260AB724AAB935001AEF11 /* Assets.xcassets */; };
 		CA260ABB24AAB935001AEF11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA260ABA24AAB935001AEF11 /* Preview Assets.xcassets */; };
 		CA260ABE24AAB935001AEF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA260ABC24AAB935001AEF11 /* LaunchScreen.storyboard */; };
+		CA260ACD24AB30EC001AEF11 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA260ACC24AB30EC001AEF11 /* Memo.swift */; };
+		CA260ACF24AB3224001AEF11 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA260ACE24AB3224001AEF11 /* MemoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CA260ABA24AAB935001AEF11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA260ABD24AAB935001AEF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA260ABF24AAB935001AEF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA260ACC24AB30EC001AEF11 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		CA260ACE24AB3224001AEF11 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		CA260AB024AAB92E001AEF11 /* StudySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA260ACB24AB30CB001AEF11 /* Model */,
 				CA260AB124AAB92E001AEF11 /* AppDelegate.swift */,
 				CA260AB324AAB92E001AEF11 /* SceneDelegate.swift */,
 				CA260AB524AAB92E001AEF11 /* MemoListScene.swift */,
@@ -73,6 +78,15 @@
 				CA260ABA24AAB935001AEF11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA260ACB24AB30CB001AEF11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA260ACC24AB30EC001AEF11 /* Memo.swift */,
+				CA260ACE24AB3224001AEF11 /* MemoStore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +163,8 @@
 				CA260AB224AAB92E001AEF11 /* AppDelegate.swift in Sources */,
 				CA260AB424AAB92E001AEF11 /* SceneDelegate.swift in Sources */,
 				CA260AB624AAB92E001AEF11 /* MemoListScene.swift in Sources */,
+				CA260ACF24AB3224001AEF11 /* MemoStore.swift in Sources */,
+				CA260ACD24AB30EC001AEF11 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
