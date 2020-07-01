@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0331A024AC43D300A8E40B /* StudySwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA03319E24AC43D300A8E40B /* StudySwiftUI.xcdatamodeld */; };
+		CA0331C624AC45F000A8E40B /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0331C524AC45F000A8E40B /* DateFormatter+Memo.swift */; };
 		CA260AB224AAB92E001AEF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA260AB124AAB92E001AEF11 /* AppDelegate.swift */; };
 		CA260AB424AAB92E001AEF11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA260AB324AAB92E001AEF11 /* SceneDelegate.swift */; };
 		CA260AB624AAB92E001AEF11 /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA260AB524AAB92E001AEF11 /* MemoListScene.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA03319F24AC43D300A8E40B /* StudySwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudySwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		CA0331C524AC45F000A8E40B /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
 		CA260AAE24AAB92E001AEF11 /* StudySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA260AB124AAB92E001AEF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA260AB324AAB92E001AEF11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0331C424AC45D700A8E40B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA0331C524AC45F000A8E40B /* DateFormatter+Memo.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CA260AA524AAB92E001AEF11 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		CA260AB024AAB92E001AEF11 /* StudySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CA0331C424AC45D700A8E40B /* Extension */,
 				CA260ACB24AB30CB001AEF11 /* Model */,
 				CA260AB124AAB92E001AEF11 /* AppDelegate.swift */,
 				CA260AB324AAB92E001AEF11 /* SceneDelegate.swift */,
@@ -68,6 +81,7 @@
 				CA260ABC24AAB935001AEF11 /* LaunchScreen.storyboard */,
 				CA260ABF24AAB935001AEF11 /* Info.plist */,
 				CA260AB924AAB935001AEF11 /* Preview Content */,
+				CA03319E24AC43D300A8E40B /* StudySwiftUI.xcdatamodeld */,
 			);
 			path = StudySwiftUI;
 			sourceTree = "<group>";
@@ -163,8 +177,10 @@
 				CA260AB224AAB92E001AEF11 /* AppDelegate.swift in Sources */,
 				CA260AB424AAB92E001AEF11 /* SceneDelegate.swift in Sources */,
 				CA260AB624AAB92E001AEF11 /* MemoListScene.swift in Sources */,
+				CA0331C624AC45F000A8E40B /* DateFormatter+Memo.swift in Sources */,
 				CA260ACF24AB3224001AEF11 /* MemoStore.swift in Sources */,
 				CA260ACD24AB30EC001AEF11 /* Memo.swift in Sources */,
+				CA0331A024AC43D300A8E40B /* StudySwiftUI.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +374,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA03319E24AC43D300A8E40B /* StudySwiftUI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA03319F24AC43D300A8E40B /* StudySwiftUI.xcdatamodel */,
+			);
+			currentVersion = CA03319F24AC43D300A8E40B /* StudySwiftUI.xcdatamodel */;
+			path = StudySwiftUI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA260AA624AAB92E001AEF11 /* Project object */;
 }

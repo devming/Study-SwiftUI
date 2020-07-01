@@ -9,16 +9,23 @@
 import SwiftUI
 
 struct MemoListScene: View {
-    var a = 0
+    @EnvironmentObject var store: MemoStore
+    @EnvironmentObject var formatter: DateFormatter
     
     var body: some View {
-        VStack {
-            Text("Nice ~~~ !!")
-                .fontWeight(.bold)
-            Text("Hello, World!")
-                .font(.title)
-                .foregroundColor(Color.black)
-                .background(Color.yellow)
+        NavigationView {
+            List(store.list) { memo in
+                VStack(alignment: .leading) {
+                    Text(memo.content)
+                        .font(.body)
+                        .lineLimit(1)
+                    
+                    Text("\(memo.insertDate, formatter: self.formatter)")
+                        .font(.caption)
+                        .foregroundColor(Color(UIColor.secondaryLabel))
+                }
+            }
+            .navigationBarTitle("내 메모")
         }
     }
 }
@@ -26,5 +33,7 @@ struct MemoListScene: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MemoListScene()
+            .environmentObject(MemoStore())
+            .environmentObject(DateFormatter.memoDateFormatter)
     }
 }
